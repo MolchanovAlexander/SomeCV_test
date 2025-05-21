@@ -3,7 +3,7 @@ import cv2 as cv
 
 print(cv.__version__)
 #video = cv.VideoCapture(0) # first camera video input enabled
-video = cv.VideoCapture("ich.mp4")
+video = cv.VideoCapture("Ufo.mp4")
 subtractor = cv.createBackgroundSubtractorMOG2(100, 50)
 
 while True:
@@ -18,7 +18,7 @@ while True:
             break
 
     else:
-        video = cv.VideoCapture("ich.mp4")
+        video = cv.VideoCapture("Ufo.mp4")
 
 cv.destroyAllWindows()
 video.release()
